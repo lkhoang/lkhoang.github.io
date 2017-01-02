@@ -24,7 +24,6 @@ function getRequestObject() {
 ajaxUtils.sendGetRequest = 
   function(requestUrl, responseHandler, isJsonResponse) {
     var request = getRequestObject();
-    request.withCredentials = true;
     request.onreadystatechange = 
       function() { 
         handleResponse(request, 
